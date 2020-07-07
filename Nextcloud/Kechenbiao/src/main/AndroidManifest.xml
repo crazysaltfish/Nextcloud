@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kcb">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/timetable_114px"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".AddCourseActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+
+        <activity
+            android:name=".AboutActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+    </application>
+
+</manifest>

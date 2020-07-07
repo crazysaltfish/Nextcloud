@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.administrator.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:windowSoftInputMode="stateHidden|adjustResize"
+        tools:replace="android:icon, android:theme">
+        <activity android:name=".TouchMove"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:label="天气" android:logo="@mipmap/ic_launcher" />
+        <activity android:name=".ESP8266Wifi" />
+        <activity android:name=".HelloCharts" />
+        <activity android:name=".TabHostTest" />
+        <activity android:name=".RecyclerViewdemo" android:label="下拉刷新" android:theme="@style/AppTheme"/>
+        <activity android:name=".refreshActivity" />
+        <activity android:name=".material_design_login" >
+
+        </activity>
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".DianMing" android:launchMode="singleTask" />
+        <activity android:name=".Dianming_1"  />
+        <activity android:name=".YuYue" android:launchMode="singleTask" />
+        <activity android:name=".YuYue_1" />
+        <activity android:name="myclass.AboutActivity" />
+        <activity android:name="myclass.AddCourseActivity" />
+        <activity android:name="myclass.MainActivity" android:launchMode="singleTask" />
+        <activity android:name=".Class_Detail" />
+        <activity android:name=".QianDao" android:launchMode="singleTask" />
+        <activity android:name=".attendance" android:launchMode="singleTask"/>
+        <activity android:name=".Mysetting" />
+
+        <activity android:name="photocheckapp.MainActivity"/>
+        <activity android:name="photocheckapp.Login" >
+
+        </activity>
+
+
+        <service android:name="service.Myservice" android:exported = "false" >
+            <intent-filter>
+                <action android:name="android.intent.action.Myservice"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="service.AlarmReceiver" />
+    </application>
+
+</manifest>

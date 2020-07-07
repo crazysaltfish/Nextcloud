@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_size_10px"
+        android:enabled="true"
+        android:title="@string/size_10px"
+        android:visible="true" />
+    <item
+        android:id="@+id/item_size_12px"
+        android:enabled="true"
+        android:title="@string/size_12px"
+        android:visible="true" />
+    <item
+        android:id="@+id/item_size_14px"
+        android:enabled="true"
+        android:title="@string/size_14px"
+        android:visible="true" />
+</menu>

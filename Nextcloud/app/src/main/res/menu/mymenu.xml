@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--右侧搜索操作条目-->
+    <item
+        android:id="@+id/action_search"
+        android:title="@string/menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/item_size"
+        android:enabled="true"
+        android:title="@string/size"
+        android:visible="true"
+        android:icon="@drawable/add_72px"
+        app:showAsAction="never">
+        <menu>
+            <group android:id="@+id/group_size">
+            <item
+                android:id="@+id/item_size_10px"
+                android:checkable="true"
+                android:enabled="true"
+                android:title="@string/size_10px"
+                android:visible="true" />
+            <item
+                android:id="@+id/item_size_12px"
+                android:checkable="true"
+                android:enabled="true"
+                android:title="@string/size_12px"
+                android:visible="true" />
+            <item
+                android:id="@+id/item_size_14px"
+                android:checkable="true"
+                android:enabled="true"
+                android:title="@string/size_14px"
+                android:visible="true" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/item_color"
+        android:enabled="true"
+        android:title="@string/color"
+        android:visible="true"
+        android:icon="@drawable/adb_72px"
+        app:showAsAction="never">
+    <menu>
+        <group android:id="@+id/group_color">
+        <item
+            android:id="@+id/item_color_red"
+            android:checkable="true"
+            android:enabled="true"
+            android:title="@string/color_red"
+            android:visible="true" />
+        <item
+            android:id="@+id/item_color_bule"
+            android:checkable="true"
+            android:enabled="true"
+            android:title="@string/color_bule"
+            android:visible="true" />
+        <item
+            android:id="@+id/item_color_green"
+            android:checkable="true"
+            android:enabled="true"
+            android:title="@string/color_green"
+            android:visible="true" />
+        </group>
+    </menu>
+    </item>
+</menu>
