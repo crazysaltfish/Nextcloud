@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_scrollFlags="scroll|enterAlways|snap">
+
+            </android.support.v7.widget.Toolbar>
+
+
+
+    <android.support.v4.widget.DrawerLayout
+
+        android:id="@+id/drawlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--content-->
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cs_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+
+            <com.cleveroad.pulltorefresh.firework.FireworkyPullToRefreshLayout
+                android:id="@+id/pullToRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:ptr_background="@drawable/bg1">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyView"
+                    android:layout_width="368dp"
+                    android:layout_height="495dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+            </com.cleveroad.pulltorefresh.firework.FireworkyPullToRefreshLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <!--menu-->
+        <FrameLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/white">
+
+            <ListView
+                android:id="@+id/lv_list"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                />
+
+        </FrameLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+</LinearLayout>

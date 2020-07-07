@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">课堂辅助APP</string>
+    <string name="psdHint">请输入密码</string>
+    <string name="usernameHint">请输入用户名</string>
+    <string name="username">用户名</string>
+    <string name="tv_username">tv1</string>
+    <string name="passWord">密码</string>
+    <string name="register">注册</string>
+    <string name="info">    </string>
+    <string name="jiacu">加粗</string>
+    <string name="xieti">斜体</string>
+    <string name="dianming">点名</string>
+    <string name="yuyue">预约</string>
+    <string name="kebiao">课表</string>
+    <string name="wo">我</string>
+    <string name="weizhi">x=  y=</string>
+    <string name="tiaozhuan">跳转</string>
+    <string name="fanhui">返回</string>
+    <string name="btnlistview">ListView</string>
+    <string name="tbnback">返回</string>
+    <string name="City">城市</string>
+    <string name="lvCity">跳转到lv</string>
+    <string name="gotoWifi">Wifi</string>
+    <string name="hellocharts">表格</string>
+    <string name="led">LED</string>
+    <string name="beep">BEEP</string>
+    <string name="add">添加</string>
+    <string name="tabHost">选项卡</string>
+    <string name="size">字体</string>
+    <string name="color">颜色</string>
+    <string name="size_10px">10px</string>
+    <string name="size_12px">12px</string>
+    <string name="size_14px">14px</string>
+    <string name="color_red">red</string>
+    <string name="color_bule">bule</string>
+    <string name="color_green">green</string>
+    <string name="service">服务器</string>
+    <string name="notify">消息提醒</string>
+    <string name="materialDesign">Login</string>
+    <string name="wifiMac">wifimac</string>
+    <string name="content_text">内容区域</string>
+    <string name="menu_text">侧滑菜单</string>
+    <string name="open">侧滑菜单</string>
+    <string name="close">关闭菜单</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_dianming">点名界面</string>
+    <string name="menu_yuyue">预约界面</string>
+    <string name="startdianming">开始点名</string>
+    <string name="enddianming">结束点名</string>
+    <string name="selecttime">请选择提前时间：</string>
+    <string name="testyuyue">短信预约</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="hint_etjingdu">请输入课程进度</string>
+    <string name="tv_jindu">课程进度</string>
+    <string name="tv_zuoye">课程作业</string>
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
+    <string-array name="course">
+        <item>嵌入式</item>
+        <item>传感器</item>
+        <item>算法</item>
+        <item>通信原理</item>
+    </string-array>
+    <string-array name="menuTitles">
+        <item>课程点名</item>
+        <item>预约提醒</item>
+        <item>我的课表</item>
+        <item>我的考勤表</item>
+        <item>我</item>
+    </string-array>
+    <string-array name="menuTitles2">
+        <item>我的项目</item>
+        <item>我的任务</item>
+        <item>考勤记录</item>
+        <item>我的设置</item>
+        <item>关于</item>
+    </string-array>
+    <string-array name="menuTitles1">
+        <item>课程签到</item>
+        <item>我的课表</item>
+        <item>我的考勤表</item>
+        <item>我</item>
+    </string-array>
+    <string-array name="num">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="time">
+        <item>30分钟</item>
+        <item>1小时</item>
+        <item>1小时30分钟</item>
+        <item>2小时</item>
+    </string-array>
+</resources>
